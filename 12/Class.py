@@ -109,7 +109,6 @@ class Boeing_F22_Raptor(Airplane):
 
 
 
-
 car = Audi()
 car.info()
 car.color = "Red"
