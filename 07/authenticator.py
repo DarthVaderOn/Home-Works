@@ -29,7 +29,7 @@
 6. Удаляем весь код с подсказкой паспорта, ввода имени и возраста. Класс валидатора, модуль валидатора и ошибку валидации удаляем (но не забываем, что это должно быть все в гит истории, 
    потому что к этому вернемся).
 7. Приветствуем пользователя: пишем логин, время последней успешной авторизации (формат день.месяц.год час:минута:секунда) и сколько раз пытались войти в приложение с ошибкой авторизации.
-8. Запускаем игру в отгадайку рандомного числа. """
+8. Запускаем игру в отгадай рандомное число. """
 
 
 
@@ -78,7 +78,7 @@ class Authenticator():
                 c.datetime.utcnow().isoformat() строка, которую нужно перевести к datetime объекту
                 d.Количество проваленных попыток (ошибки) """
             
-            with open(r'C:\Python\Уроки TeachMeSkill\Home Works\7\auth.txt', 'r') as files:
+            with open(r'C:\Python\Уроки TeachMeSkill\Home Works\07\auth.txt', 'r') as files:
 
                 self.login = files.readline().strip()
                 self._password = files.readline().strip()
@@ -112,7 +112,7 @@ class Authenticator():
     def _update_auth_file(self) -> None:
         """ Метод перезаписи файла auth.txt. Не принимает аргументов, не возвращает ничего. """
         
-        with open(r'C:\Python\Уроки TeachMeSkill\Home Works\7\auth.txt', 'w') as files:
+        with open(r'C:\Python\Уроки TeachMeSkill\Home Works\07\auth.txt', 'w') as files:
             
             files.write(f'{self.login}\n')
             files.write(f'{self._password}\n')
